@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<h2>Voici la page ou seront listé mes rando sur Zelda</h2>
+
+{# tab #}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#minish">MinishCap</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#alttp">A link to the past</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " data-toggle="tab" href="#awakening">Link's Awakening</a>
+  </li>
+</ul>
+
+{# tab content #}
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="minish">
+    <p>Les run sur The Legend of Zelda : MinishCap</p>
+  </div>
+  <div class="tab-pane fade" id="alttp">
+    <p>Les run sur The Legend of Zelda: A Link to the past.</p>
+  </div>
+  <div class="tab-pane fade" id="awakening">
+    <p>Les run sur The Legend of Zelda: Link's Awakening</p>
+  </div>
+</div>
+
+
+{% endblock %}
+

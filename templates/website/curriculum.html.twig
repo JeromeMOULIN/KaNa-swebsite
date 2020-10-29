@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<h2>Voici la page ou mes differente competance et experience seront listé.</h2>
+
+{# tab #}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#logistique">Logistique</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#usinage">Usinage</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " data-toggle="tab" href="#web">Developpement Web</a>
+  </li>
+</ul>
+
+{# tab content #}
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="logistique">
+    <p>Les metiers de la logistique.</p>
+  </div>
+  <div class="tab-pane fade" id="usinage">
+    <p>Les metiers en usinage.</p>
+  </div>
+  <div class="tab-pane fade" id="web">
+    <p>Les metier en developpement web.</p>
+  </div>
+</div>
+
+
+{% endblock %}
+
