@@ -42,9 +42,9 @@
                     </li>
                     </ul>
                         {% if app.user %}
-                            <button type="button" class="btn btn-outline-danger">Log out</button>
+                            <button type="button" class="btn btn-outline-danger"><a style="text-decoration: none;" href="/logout">Log out</a></button>
                         {% else %}
-                            <button type="button" class="btn btn-outline-success">Log in</button>
+                            <button type="button" class="btn btn-outline-success"><a style="text-decoration: none;" href="/login">Log in</a></button>
                         {% endif %}
                         
                     </form>
