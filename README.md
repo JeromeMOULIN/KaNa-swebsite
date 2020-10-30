@@ -13,4 +13,5 @@ et suivre son avancé.
 Une page Rando ou j'y afficherai mes run randomizer sur les differente version de Zelda. ^^
 
 On pourra evidement ce log sur le site afin de pouvoir administré le contenu du site afin de crée, supprimé ou modifier
-le content des differente page ^^ Biensur la page pour crée un utilisateur ce sera uniquement accessible au admin.
+le content des differente page.
+Biensur la page pour crée un utilisateur ce sera uniquement accessible au admin.
