@@ -21,9 +21,9 @@ class User implements UserInterface
     private $id;
     
     /**
-     * @ORM\Column(type="string", length=25)
+     * @ORM\Column(type="json", length=25)
      */
-    private $roles;
+    private $roles = [];
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -82,6 +82,7 @@ class User implements UserInterface
 
         return $this;
     }
+
     public function getRoles(): array
     {
         $roles = $this->roles;
@@ -90,16 +91,21 @@ class User implements UserInterface
 
         return array_unique($roles);
     }
+
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
 
         return $this;
     }
-    public function getSalt(){
+
+    public function getSalt()
+    {
 
     }
-    public function eraseCredentials(){
+
+    public function eraseCredentials()
+    {
 
     }
 }
